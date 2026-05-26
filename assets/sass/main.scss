@@ -1,0 +1,15 @@
+@use 'reset';
+
+// Layout
+@use 'layout/header';
+@use 'layout/footer';
+
+@use 'components/page-hero';
+
+@use 'pages/home';
+@use 'pages/aide-menagere';
+@use 'pages/atelier-repassage';
+@use 'pages/tarifs';
+@use 'pages/about';
+@use 'pages/contact';
+@use 'pages/rejoignez-nous';

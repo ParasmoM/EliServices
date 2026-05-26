@@ -1,0 +1,89 @@
+:root {
+    --primary: #1B5E9E;
+    --primary-dark: #134270;
+    --primary-light: #E8F1FA;
+    --accent: #F5A623;
+    --accent-hover: #E6951A;
+    --dark: #1A1A2E;
+    --text: #374151;
+    --text-light: #6B7280;
+    --bg: #FAFBFD;
+    --white: #FFFFFF;
+    --border: #E5E7EB;
+    --success: #10B981;
+    --radius: 12px;
+    --shadow: 0 4px 24px rgba(27, 94, 158, 0.08);
+    --shadow-lg: 0 12px 48px rgba(27, 94, 158, 0.12);
+}
+
+/* Box-sizing */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base HTML */
+html {
+    // font-size: 62.5%;
+    /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+/* Images fluides */
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Listes sans style */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Liens propres */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Boutons propres */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+}
+
+/* Typo globale simple et neutre */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Titres neutres */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+/* WordPress blocs */
+.wp-block {
+    max-width: 100%;
+}

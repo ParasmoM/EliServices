@@ -1,0 +1,404 @@
+/* ===== SECTIONS ===== */
+section {
+    padding: 70px 0;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 44px;
+}
+
+.section-label {
+    display: inline-block;
+    background: var(--primary-light);
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--dark);
+    margin-bottom: 12px;
+}
+
+.section-header p {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 28px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+/* ===== INTRO / FONDATEURS ===== */
+.intro {
+    background: white;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-content .founder-line {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.intro-content strong {
+    color: var(--dark);
+}
+
+/* ===== ÉVOLUTION / TIMELINE ===== */
+.evolution {
+    background: var(--bg);
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 28px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--primary), var(--accent));
+    border-radius: 3px;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 28px;
+    padding: 0 0 40px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-dot {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--shadow);
+}
+
+.timeline-dot.accent {
+    border-color: var(--accent);
+}
+
+.timeline-dot.green {
+    border-color: var(--success);
+}
+
+.timeline-content {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    flex: 1;
+    transition: all 0.3s;
+}
+
+.timeline-content:hover {
+    box-shadow: var(--shadow);
+}
+
+.timeline-content .year {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.timeline-content .year.accent {
+    color: var(--accent);
+}
+
+.timeline-content h3 {
+    font-size: 1rem;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* ===== VALEURS ===== */
+.valeurs {
+    background: white;
+}
+
+.valeurs-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.valeurs-content>p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.valeurs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.valeur-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    transition: all 0.3s;
+}
+
+.valeur-item:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow);
+}
+
+.valeur-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.valeur-icon.blue {
+    background: var(--primary-light);
+}
+
+.valeur-icon.green {
+    background: #D1FAE5;
+}
+
+.valeur-icon.orange {
+    background: #FEF3E2;
+}
+
+.valeur-icon.purple {
+    background: #EDE9FE;
+}
+
+.valeur-text h4 {
+    font-size: 0.92rem;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+
+.valeur-text p {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+/* ===== ENGAGEMENTS ===== */
+.engagements {
+    background: var(--bg);
+}
+
+.eng-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.eng-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px 28px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.eng-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.eng-card .eng-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin: 0 auto 16px;
+}
+
+.eng-card .eng-icon.blue {
+    background: var(--primary-light);
+}
+
+.eng-card .eng-icon.green {
+    background: #D1FAE5;
+}
+
+.eng-card .eng-icon.orange {
+    background: #FEF3E2;
+}
+
+.eng-card h3 {
+    font-size: 1rem;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.eng-card p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* ===== ÉQUIPE ===== */
+.equipe {
+    background: white;
+}
+
+.equipe-highlight {
+    max-width: 700px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, var(--primary-light) 0%, #D6E8F7 100%);
+    border-radius: 20px;
+    padding: 44px;
+    text-align: center;
+}
+
+.equipe-highlight .eq-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.equipe-highlight h3 {
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-bottom: 12px;
+}
+
+.equipe-highlight p {
+    font-size: 0.95rem;
+    color: var(--primary-dark);
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.nationalities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nat-tag {
+    background: white;
+    color: var(--dark);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 18px;
+    }
+
+    .timeline-dot {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .valeurs-list {
+        grid-template-columns: 1fr;
+    }
+
+    .eng-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav {
+        display: none;
+    }
+}

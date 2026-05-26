@@ -1,0 +1,34 @@
+.page-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 56px 0 48px;
+    text-align: center;
+}
+
+.page-hero .breadcrumb {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 16px;
+}
+
+.page-hero .breadcrumb a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.page-hero .breadcrumb a:hover {
+    color: white;
+}
+
+.page-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+}
+
+.page-hero p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto;
+}

@@ -1,0 +1,394 @@
+/* ===== INTRO (image + texte) ===== */
+.intro {
+    background: white;
+}
+
+.intro-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.intro-img {
+    width: 100%;
+    height: 360px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, var(--primary-light) 0%, #D6E8F7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    overflow: hidden;
+}
+
+.intro-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--dark);
+    margin-bottom: 16px;
+}
+
+.intro-text p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.intro-text .btn {
+    margin-top: 12px;
+}
+
+/* ===== CHECK-LIST ===== */
+.checklist-section {
+    background: var(--bg);
+}
+
+.check-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 0.9rem;
+    color: var(--text);
+    transition: all 0.2s;
+}
+
+.check-item:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow);
+}
+
+.check-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: #D1FAE5;
+    color: var(--success);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+/* ===== CONVENTIONS PAR RÉGION ===== */
+.conventions {
+    background: white;
+}
+
+.conv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.conv-card {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px 28px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.conv-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.conv-card .conv-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--primary-light);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin: 0 auto 16px;
+}
+
+.conv-card h3 {
+    font-size: 1.1rem;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.conv-card p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.conv-card a {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: gap 0.2s;
+}
+
+.conv-card a:hover {
+    gap: 10px;
+}
+
+/* ===== SUPPLÉMENT ===== */
+.supplement {
+    background: var(--bg);
+}
+
+.supp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.supp-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+}
+
+.supp-card .supp-region {
+    display: inline-block;
+    background: var(--primary-light);
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+}
+
+.supp-card .supp-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+
+.supp-card .supp-detail {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.supp-note {
+    background: #FEF3E2;
+    border: 1px solid #F5D89A;
+    border-radius: 14px;
+    padding: 20px 28px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    max-width: 800px;
+    margin: 24px auto 0;
+}
+
+.supp-note .icon {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.supp-note p {
+    font-size: 0.88rem;
+    color: #92600A;
+    line-height: 1.7;
+}
+
+/* ===== SALAIRE & CONDITIONS ===== */
+.conditions {
+    background: white;
+}
+
+.conditions-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.conditions-content h3 {
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-bottom: 12px;
+    margin-top: 28px;
+}
+
+.conditions-content h3:first-child {
+    margin-top: 0;
+}
+
+.conditions-content p {
+    font-size: 0.92rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.conditions-content strong {
+    color: var(--dark);
+}
+
+.salary-highlight {
+    background: var(--primary-light);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.salary-highlight .sal-amount {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.salary-highlight p {
+    font-size: 0.88rem;
+    color: var(--primary-dark);
+    line-height: 1.6;
+}
+
+.why-list {
+    list-style: none;
+    margin: 16px 0;
+}
+
+.why-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.why-list li::before {
+    content: '✓';
+    color: var(--success);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+/* ===== CTA BOTTOM ===== */
+.cta-bottom {
+    background: var(--bg);
+    padding: 0 0 70px;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, var(--primary) 0%, #2471B8 100%);
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-box::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(245, 166, 35, 0.15);
+    border-radius: 50%;
+    top: -80px;
+    right: -80px;
+}
+
+.cta-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.cta-box p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+    margin-bottom: 24px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-white {
+    background: var(--accent);
+    color: var(--white);
+    font-weight: 700;
+}
+
+.btn-white:hover {
+    background: var(--accent-hover);
+}
+
+.intro-img {
+    overflow: hidden;
+    height: 100%;
+}
+
+.intro-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .intro-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .check-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .conv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .supp-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .salary-highlight {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav {
+        display: none;
+    }
+}
