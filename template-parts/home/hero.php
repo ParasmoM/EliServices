@@ -9,7 +9,7 @@ $team_image = $img_path . '/equipe-eli-services.jpg';
         <div class="hero-grid">
             <div>
                 <div class="hero-badge">
-                    ⭐ Entreprise éthique depuis 2011
+                    ⭐ Entreprise éthique depuis 2011--
                 </div>
                 <h1>Un service de qualité,<br><em>avec respect</em></h1>
                 <p>Aide ménagère et repassage à domicile via les titres-services. Chez Eli Services, l'humain passe avant le profit.</p>
